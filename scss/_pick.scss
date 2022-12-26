@@ -1,0 +1,155 @@
+.pick {
+	
+	padding-bottom: 50px;
+   // padding: 40px 80px 50px 86px;
+   
+   color: $color-base;
+   margin: 0 auto;
+&__top {
+	padding: 40px 50px 0 50px;
+	background-color: #f6f4ec;
+}
+   &__title {
+      font-size: 23px;
+      line-height: 39px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 24px;
+   }
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 80px;
+		margin: 0 auto;
+      
+      padding-bottom: 86px;
+   }
+   &__item {
+		// margin: 0 auto;
+		// max-width: 380px;
+   }
+   &__item-image {
+		position: relative;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 380px;
+      height: 567px;
+      margin-bottom: 10px;
+   }
+   &__item-image-1 {
+      background-image: url("../images/pick1.jpg");
+		width: 100%;
+   }
+   &__item-image-2 {
+      background-image: url("../images/pick2.jpg");
+		width: 100%;
+   }
+   &__item-image-3 {
+      background-image: url("../images/pick3.jpg");
+		width: 100%;
+   }
+   &__item-title {
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+   }
+   &__title-price {
+      font-size: 18px;
+      line-height: 25px;
+   }
+   &__bottom {
+      padding: 24px 50px 0 50px;
+   }
+   &__bottom-box {
+		margin: 0 auto;
+   }
+   &__bottom-image {
+      background: url("../images/pick-bot.jpg") center / cover no-repeat;
+      max-width: 1220px;
+      height: 322px;
+		margin: 0 auto;
+   }
+   &__bottom-block {
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1220px;
+      height: 92px;
+      background-color: #df9b7a;
+		margin: 0 auto;
+   }
+   &__bottom-text {
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #f6f4ec;
+   }
+   &__bottom-btn {
+      background: transparent;
+   }
+   &__bottom-shop {
+      font-size: 18px;
+      line-height: 29px;
+      color: #f6f4ec;
+   }
+	@media screen and (max-width: 991px) {
+		&__wrapper {
+			gap: 30px;
+		}
+		&__bottom-block {
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			padding: 0 10px;
+			text-align: center;
+		}
+		
+	}
+	@media screen and (max-width: 767px) {
+		&__wrapper {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			}
+		&__bottom-text {
+			font-size: 16px;
+			}
+		&__title {
+			font-size: 26px;
+			}
+		&__text {
+			font-size: 16px;
+			}
+		
+	}
+	@media screen and (max-width: 575px) {
+		margin-bottom: 20px;
+		padding-bottom: 0;
+		&__title{
+			font-size: 18px;
+		}
+		&__top {
+			padding: 20px 15px;
+		}
+		&__item-title {
+			font-size: 16px;
+		}
+		&__wrapper {
+			padding-bottom: 0;
+		}
+		&__bottom {
+			padding: 20px 15px;
+		}
+		&__bottom-text {
+			font-size: 14px;
+			line-height: 21px;
+		}
+		
+	}
+}

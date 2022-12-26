@@ -1,0 +1,66 @@
+.hero {
+   &__top {
+      text-align: center;
+   }
+   &__image {
+      background: url("../images/hero.jpg") center / cover no-repeat;
+      // width: 100vw;
+      height: 435px;
+      object-fit: cover;
+   }
+   &__button-shop {
+      display: block;
+      background: $color-base;
+      font-size: 17px;
+      line-height: 29px;
+      padding: 10px 20px;
+      color: #fff;
+   }
+   &__button {
+      margin-top: 341px;
+   }
+   &__inner {
+		padding-left: 70px;
+		padding-top: 69px;
+		padding-bottom: 69px;
+      background: #a9ae8d;
+      color: #f6f4ec;
+   }
+   &__suptitle {
+      font-size: 18px;
+      line-height: 29px;
+      text-transform: uppercase;
+   }
+   &__title {
+      font-size: 33px;
+      line-height: 64px;
+   }
+   &__btn {
+      background-color: transparent;
+   }
+
+   &__shop {
+      font-size: 16px;
+      line-height: 27px;
+      color: #f6f4ec;
+   }
+	@media screen and (max-width: 575px) {
+		&__inner {
+			text-align: center;
+			padding: 30px 0;
+			background: #a9ae8d;
+			color: #f6f4ec;
+		}
+		&__title {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		&__suptitle {
+			font-size: 14px;
+			line-height: 21px;
+		}
+		&__shop {
+			font-size: 16px;
+		}
+	}
+}

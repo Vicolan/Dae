@@ -1,0 +1,110 @@
+.header {
+	
+   &__top {
+      background-color: #b36050;
+      padding: 10px 0;
+   }
+   &__top-title {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      color: #f1d3b9;
+      text-align: center;
+   }
+
+   &__wrapper {
+		position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 10px 22px;
+      background-color: #f6f4ec;
+   }
+   &__nav {
+      display: flex;
+   }
+   &__nav-list:not(:last-child) {
+      margin-right: 32px;
+   }
+   &__nav-link {
+      font-size: 18px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: $color-base-dark;
+   }
+	&__burger {
+		width: 35px;
+		height: 35px;
+		background: transparent;
+		display: none;
+	}
+   &__logo {
+      background: url("../images/logo.png") center / cover no-repeat;
+      width: 120px;
+      height: 56px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+   }
+   &__account {
+      display: flex;
+      font-size: 14px;
+      line-height: 22px;
+      color: $color-base;
+   }
+   &__account-link {
+      margin-right: 15px;
+   }
+   &__account-cart {
+      background: url("../images/icons/cart.svg") center / cover no-repeat;
+      width: 20px;
+      height: 21px;
+      margin-right: 10px;
+   }
+  
+
+	@media screen and (max-width: 991px) {
+		&__logo {
+			position: relative;
+			transform: none;
+			left: 0;
+		}
+	
+	}
+	@media screen and (max-width: 767px) {
+		&__nav {
+			display: block;
+			position: fixed;
+			top: 0;
+			background-color: #fff;
+			padding: 15px;
+			left: -200vw;
+			z-index: 5;
+			transition: .3s;
+		}
+		&__nav-list {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		
+		&__burger {
+			display: block;
+		}
+		&__nav--open{
+			top: 0;
+			left: 0px;
+			transition: .3s;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		&__top-title {
+      	font-size: 15px;
+      	line-height: 20px;
+   	}
+		&__wrapper {
+     		padding: 10px 10px;
+      	background-color: #f6f4ec;
+   	}
+	}
+}

@@ -1,0 +1,21 @@
+$color-base: #b45f4d;
+$color-base-dark: #b4604d;
+$color-base-light: #c17c6c;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-sm-max: 767px;
+$screen-md-max: 768px;
+$screen-lg-max: 1199px;
+
+
+html {
+	font-size: 62.5%;
+}
+body {
+	@include font;
+	font-weight: 400;
+}
