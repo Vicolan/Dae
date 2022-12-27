@@ -24,10 +24,7 @@
       
       padding-bottom: 86px;
    }
-   &__item {
-		// margin: 0 auto;
-		// max-width: 380px;
-   }
+ 
    &__item-image {
 		position: relative;
       background-position: center;
@@ -55,6 +52,12 @@
       text-transform: uppercase;
       margin-bottom: 10px;
    }
+	&__item {
+		transition: .7s;
+	}
+	&__item:hover {
+		transform: translateY(-1.5rem) scale(1.1)
+	}
    &__title-price {
       font-size: 18px;
       line-height: 25px;
@@ -89,6 +92,11 @@
    }
    &__bottom-btn {
       background: transparent;
+		transition: .5s;
+   }
+	&__bottom-btn:hover {
+      transform: translateY(-4px);
+		transform: scaleX(1.2) scaleY(1.1);
    }
    &__bottom-shop {
       font-size: 18px;

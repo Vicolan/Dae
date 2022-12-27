@@ -41,12 +41,21 @@
    }
    &__btn {
       background-color: transparent;
+		transition: .5s;
+   }
+	&__btn:hover {
+   	transform: translateY(-4px);
+		transform: scaleX(1.2) scaleY(1.1);
    }
    &__shop {
       font-size: 16px;
       line-height: 26px;
       color: $color-base;
    }
+	// &__shop:hover {
+	// 	transform: translateY(-4px);
+	// 	transform: scaleX(1.2) scaleY(1.1);
+	// }
    @media screen and (max-width: 991px) {
       &__inner {
          flex-direction: column;

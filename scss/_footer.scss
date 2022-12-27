@@ -19,10 +19,16 @@
    &__block-2 {
 		margin-right: 3px;
    }
-
+	&__item {
+		transition: .5s;
+	}
    &__item:not(:last-child) {
 		margin-bottom: 10px;
    }
+	&__item:hover {
+		transform: translateY(-4px);
+		transform: scaleX(1.2) scaleY(1.1);
+	}
   
    &__block-3 {
       line-height: 22px;

@@ -32,6 +32,13 @@
       text-transform: uppercase;
       color: $color-base-dark;
    }
+	&__nav-list {
+		transition: .5s;
+	}
+	&__nav-list:hover {
+		transform: translateY(-4px);
+		transform: scaleX(1.2) scaleY(1.1);
+	}
 	&__burger {
 		width: 35px;
 		height: 35px;
@@ -51,7 +58,12 @@
       font-size: 14px;
       line-height: 22px;
       color: $color-base;
+		transition: .5s;
    }
+	&__account:hover {
+		transform: translateY(-4px);
+		transform: scaleX(1.2) scaleY(1.1);
+	}
    &__account-link {
       margin-right: 15px;
    }

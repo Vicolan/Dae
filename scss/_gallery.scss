@@ -57,6 +57,12 @@
       height: 46px;
       transform: translate(92px, -56px);
    }
+	&__item {
+		transition: .5s;
+	}
+	&__item:hover {
+		transform: translateY(-1.5rem) scale(1.2)
+	}
    @media screen and (max-width: 991px) {
 		&__grid {
 			grid-template-columns: repeat(3, 1fr);
